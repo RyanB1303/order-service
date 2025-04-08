@@ -22,3 +22,6 @@ spring:
     url: jdbc:postgresql://localhost:5432/polardb_order
   lifecycle:
     timeout-per-shutdown-phase: 15s
+
+polar:
+  catalog-service-uri: "http://localhost:9001"
