@@ -30,6 +30,11 @@ dependencies {
 	testImplementation 'org.testcontainers:postgresql'
 	testImplementation 'org.testcontainers:r2dbc'
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
+
+	runtimeOnly 'org.flywaydb:flyway-core:10.20.0'
+	runtimeOnly 'org.flywaydb:flyway-database-postgresql'
+	runtimeOnly 'org.springframework.boot:spring-boot-starter-data-jdbc'
+	runtimeOnly 'org.postgresql:postgresql'
 }
 
 tasks.named('test') {
