@@ -17,8 +17,8 @@ spring:
       initial-size: 5
       max-size: 10
   flyway:
-    user: ${spring.r2bc.username}
-    password: ${spring.r2bc.password}
+    user: ${spring.r2dbc.username}
+    password: ${spring.r2dbc.password}
     url: jdbc:postgresql://localhost:5432/polardb_order
   lifecycle:
     timeout-per-shutdown-phase: 15s
