@@ -29,7 +29,7 @@ dependencies {
 	testImplementation 'org.testcontainers:junit-jupiter'
 	testImplementation 'org.testcontainers:postgresql'
 	testImplementation 'org.testcontainers:r2dbc'
-	testImplementation 'com.squareup.okhttp3:mockwebserver:4.9.3'
+	testImplementation 'com.squareup.okhttp3:mockwebserver:4.12.0'
 
 	testRuntimeOnly 'org.junit.platform:junit-platform-launcher'
 
@@ -38,6 +38,7 @@ dependencies {
 	runtimeOnly 'org.flywaydb:flyway-database-postgresql'
 	runtimeOnly 'org.springframework.boot:spring-boot-starter-data-jdbc'
 	runtimeOnly 'org.postgresql:postgresql'
+	runtimeOnly 'io.netty:netty-resolver-dns-native-macos:4.1.79.Final:osx-aarch_64'
 
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
 }
