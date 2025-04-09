@@ -56,7 +56,7 @@ dependencyManagement {
 }
 
 bootBuildImage {
-	builder = "docker.io/paketobuildpacks/builder-jammy-base"
+	builder = "docker.io/paketobuildpacks/builder-jammy-java-tiny:latest"
 	imageName = "${project.name}"
 	environment = ["BP_JVM_VERSION": "17.*"]
 
