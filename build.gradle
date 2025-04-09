@@ -37,6 +37,8 @@ dependencies {
 	runtimeOnly 'org.postgresql:postgresql'
 
 	annotationProcessor 'org.springframework.boot:spring-boot-configuration-processor'
+
+	testImplementation 'com.squareup.okhttp3:mockwebserver'
 }
 
 tasks.named('test') {
